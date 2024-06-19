@@ -1,6 +1,7 @@
 ## Analyse
 
-```(gdb) disas main
+```
+(gdb) disas main
 Dump of assembler code for function main:
    0x08048504 <+0>:	push   ebp
    0x08048505 <+1>:	mov    ebp,esp
@@ -98,7 +99,8 @@ Dump of assembler code for function o:
 End of assembler dump.
 ```
 
-```(gdb) disas 0x80483d0
+```
+(gdb) disas 0x80483d0
 Dump of assembler code for function exit@plt:
    0x080483d0 <+0>:    jmp    DWORD PTR ds:0x8049838 <===
    0x080483d6 <+6>:    push   0x28
@@ -107,7 +109,8 @@ End of assembler dump.
 
 ```
 
-```level5@RainFall:~$ ./level5 
+```
+level5@RainFall:~$ ./level5 
 AAAA %p %p %p %p %p %p %p %p %p %p
 AAAA 0x200 0xb7fd1ac0 0xb7ff37d0 0x41414141 0x20702520 0x25207025 0x70252070 0x20702520 0x25207025 0x70252070
 ```
